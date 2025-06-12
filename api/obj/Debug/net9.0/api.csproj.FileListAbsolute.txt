@@ -34,3 +34,4 @@ C:\Users\User\Desktop\dotnet\NasaFIRMS\api\obj\Debug\net9.0\api.genruntimeconfig
 C:\Users\User\Desktop\dotnet\NasaFIRMS\api\obj\Debug\net9.0\ref\api.dll
 C:\Users\User\Desktop\dotnet\NasaFIRMS\api\bin\Debug\net9.0\AutoMapper.dll
 C:\Users\User\Desktop\dotnet\NasaFIRMS\api\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\User\Desktop\dotnet\NasaFIRMS\api\obj\Debug\net9.0\api.sourcelink.json

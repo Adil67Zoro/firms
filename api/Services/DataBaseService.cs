@@ -14,11 +14,11 @@ namespace api.Services
         private readonly IMongoCollection<Data> _dataCollection;
         private readonly IMapper _mapper;
 
-        public DataBaseService(IOptions<DataDatabaseSettings> dataDatabaseSettings, IMapper mapper)
+        public DataBaseService(
+            IMongoClient mongoClient,
+            IOptions<DataDatabaseSettings> dataDatabaseSettings,
+            IMapper mapper)
         {
-            var mongoClient = new MongoClient(
-                dataDatabaseSettings.Value.ConnectionString);
-
             var mongoDatabase = mongoClient.GetDatabase(
                 dataDatabaseSettings.Value.DatabaseName);
 

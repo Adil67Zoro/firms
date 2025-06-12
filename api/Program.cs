@@ -3,8 +3,12 @@ using api.Models;
 using api.Models.Entities;
 using api.Services;
 using MongoDB.Bson.Serialization;
+using MongoDB.Driver;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.WebHost.UseUrls("http://0.0.0.0:5000");
+
 
 if (!BsonClassMap.IsClassMapRegistered(typeof(Data)))
 {
@@ -25,6 +29,9 @@ if (!BsonClassMap.IsClassMapRegistered(typeof(Data)))
             .SetShouldSerializeMethod(obj => ((Data)obj).ShouldSerializeBrightness());
     });
 }
+
+var mongoConnectionString = builder.Configuration.GetConnectionString("Default");
+builder.Services.AddSingleton<IMongoClient>(sp => new MongoClient(mongoConnectionString));
 
 
 builder.Services.Configure<DataDatabaseSettings>(

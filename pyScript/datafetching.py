@@ -1,3 +1,4 @@
+import os
 import requests
 import pandas as pd
 import time
@@ -7,10 +8,11 @@ import pytz
 from datetime import datetime, timedelta
 
 INTERVAL_MINUTES = 60
+
 MAP_KEY = '7db0ce61ad6b61b0f85ddd76641e1df6'
-MONGO_URI = 'mongodb://host.docker.internal:27017' 
-DB_NAME = 'fires'
-COLLECTION_NAME = 'Fires'
+MONGO_URI = os.getenv("MONGO_URI", "mongodb://admin:StrongPassword123@mongodb:27017/?authSource=admin")
+DB_NAME = "fires"
+COLLECTION_NAME = "Fires"
 KZ_TZ = pytz.timezone('Asia/Qyzylorda')
 
 days = INTERVAL_MINUTES // 60 + 1
