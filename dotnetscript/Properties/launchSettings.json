@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "dotnetscript": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
