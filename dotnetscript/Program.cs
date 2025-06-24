@@ -448,6 +448,7 @@ class Program
                 typed["raion"] = raion;
 
                 typed["telegram"] = "sent";
+                typed["test"] = "true";
 
                 typedRecords.Add(typed);
 
