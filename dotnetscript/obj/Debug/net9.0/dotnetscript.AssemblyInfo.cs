@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("dotnetscript")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9c3e5f31c3fc7ed75f99097dac9045626fdeec9e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef5c096617c43deaa2bb3519700944282ad1660b")]
 [assembly: System.Reflection.AssemblyProductAttribute("dotnetscript")]
 [assembly: System.Reflection.AssemblyTitleAttribute("dotnetscript")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

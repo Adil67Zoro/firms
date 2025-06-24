@@ -7,7 +7,7 @@ using System.Globalization;
 using System.Net;
 using System.Net.Http;
 using System.Text.Json;
-//fwqfqrf
+
 class Program
 {
     static readonly string MAP_KEY = "7db0ce61ad6b61b0f85ddd76641e1df6";
@@ -340,6 +340,7 @@ class Program
             .RootElement.GetProperty("token").GetString()!;
 
         var url1 = "https://services3.arcgis.com/RGg2rzCtnLDgGhvB/arcgis/rest/services/Административные_границы_Казахстана/FeatureServer/0/query";
+        var urlFireOrNot = "https://services3.arcgis.com/RGg2rzCtnLDgGhvB/arcgis/rest/services/export/FeatureServer/0/query";
 
         foreach (var url in Urls)
         {
@@ -457,11 +458,13 @@ class Program
             }
         });
 
+        var FireFilteredRecords = new ConcurrentBag<BsonDocument>();
         if (typedRecords.Any())
         {
             Console.WriteLine("start the foreach loop");
             foreach (var typedRecord in typedRecords)
             {
+                Boolean isFire = false;
                 string oblast = typedRecord["oblast"].ToString()!;
                 string raion = typedRecord["raion"].ToString()!;
 
@@ -480,6 +483,32 @@ class Program
                     raionName = raion;
                 }
 
+                string latitudeIn = typedRecord["latitude"].ToDouble().ToString("0.#####", CultureInfo.InvariantCulture);
+                string longitudeIn = typedRecord["longitude"].ToDouble().ToString("0.#####", CultureInfo.InvariantCulture);
+
+                string geometryFireOrNot = $"{longitudeIn}, {latitudeIn}";
+
+                var adminFireOrNot = await client.PostAsync(urlFireOrNot, new FormUrlEncodedContent(new Dictionary<string, string>
+                {
+                    {"f", "json"},
+                    {"geometry", geometryFireOrNot},
+                    {"geometryType", "esriGeometryPoint"},
+                    {"inSR", "4326"},
+                    {"spatialRel", "esriSpatialRelIntersects"},
+                    {"outFields", "*"},
+                    {"returnGeometry", "false"},
+                    {"token", token}
+                }));
+
+                using var docFireOrNot = JsonDocument.Parse(await adminFireOrNot.Content.ReadAsStringAsync());
+                var featuresFireOrNot = docFireOrNot.RootElement.GetProperty("features");
+                string source = "Месторождение";
+                if (featuresFireOrNot.GetArrayLength() == 0)
+                {
+                    source = "Пожар";
+                    isFire = true;
+                }
+
                 string str_api_datetime = typedRecord["api_requested_datetime"].ToString()!;
                 string str_sputnik_datetime = typedRecord["sputnik_recorded_datetime"].ToString()!;
 
@@ -488,17 +517,16 @@ class Program
                 string sputnik_recorded_date = $"{str_sputnik_datetime.Substring(8, 2)}.{str_sputnik_datetime.Substring(5, 2)}.{str_sputnik_datetime.Substring(0, 4)}";
                 string sputnik_recorded_time = str_sputnik_datetime.Substring(11, 8);
 
-                string message = $"Обнаружен пожар в {oblastName}, {raionName}, зафиксированный спутником в {sputnik_recorded_date}, {sputnik_recorded_time}. " + "\n"
+                string message = $"Обнаружена высокая температура в {oblastName}, {raionName}, зафиксированный спутником в {sputnik_recorded_date}, {sputnik_recorded_time}. " + "\n"
                   + $"Данные получены нами в {api_requested_date}, {api_requested_time}:";
-
-                string latitudeIn = typedRecord["latitude"].ToDouble().ToString("0.#####", CultureInfo.InvariantCulture);
-                string longitudeIn = typedRecord["longitude"].ToDouble().ToString("0.#####", CultureInfo.InvariantCulture);
 
                 string coords = latitudeIn + "," + longitudeIn;
 
                 string visibleUrl2 = $"https://www.google.com/maps/search/?api=1&query={coords}";
 
                 message += $"\nСсылка: {visibleUrl2}";
+
+                message += $"\nИсточник: {source}";
 
                 foreach (var field in typedRecord)
                 {
@@ -584,14 +612,25 @@ class Program
                         sent = true;
                     }
                 }
+                if (isFire == true)
+                {
+                    FireFilteredRecords.Add(typedRecord);
+                }
             }
-
-            await collection.InsertManyAsync(typedRecords);
-            Console.WriteLine($"Inserted {typedRecords.Count} documents at {apiRequestedStr}");
         }
         else
         {
             Console.WriteLine("No records to insert. Skipping MongoDB update.");
+        }
+
+        if (FireFilteredRecords.Any())
+        {
+            await collection.InsertManyAsync(FireFilteredRecords);
+            Console.WriteLine($"Inserted {FireFilteredRecords.Count} documents at {apiRequestedStr}");
+        }
+        else
+        {
+            Console.WriteLine("No fire records to insert. Skipping MongoDB update.");
         }
     }
 }
