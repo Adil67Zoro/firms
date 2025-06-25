@@ -518,7 +518,7 @@ class Program
                 string sputnik_recorded_date = $"{str_sputnik_datetime.Substring(8, 2)}.{str_sputnik_datetime.Substring(5, 2)}.{str_sputnik_datetime.Substring(0, 4)}";
                 string sputnik_recorded_time = str_sputnik_datetime.Substring(11, 8);
 
-                string message = $"Обнаружена высокая температура в {oblastName}, {raionName}, зафиксированный спутником в {sputnik_recorded_date}, {sputnik_recorded_time}. " + "\n"
+                string message = $"тест, Обнаружена высокая температура в {oblastName}, {raionName}, зафиксированный спутником в {sputnik_recorded_date}, {sputnik_recorded_time}. " + "\n"
                   + $"Данные получены нами в {api_requested_date}, {api_requested_time}:";
 
                 string coords = latitudeIn + "," + longitudeIn;
