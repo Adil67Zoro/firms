@@ -40,12 +40,12 @@ class Program
         { "satellite", "Спутник" },
         { "instrument", "Прибор" },
         { "confidence", "Достоверность, проценты" },
-        { "bright_ti5", "Яркостная температура канала I-5, Кельвины" },
-        { "bright_ti4", "Яркостная температура канала I-4, Кельвины" },
+        { "bright_ti5", "Яркостная температура канала I-5, градусы Цельсия" },
+        { "bright_ti4", "Яркостная температура канала I-4, градусы Цельсия" },
         { "frp", "Радиационная мощность, Мегаватты" },
         { "daynight", "День/ночь" },
-        { "brightness", "Яркостная температура канала 21/22, Кельвины" },
-        { "bright_t31", "Яркостная температура канала 31, Кельвины" },
+        { "brightness", "Яркостная температура канала 21/22, градусы Цельсия" },
+        { "bright_t31", "Яркостная температура канала 31, градусы Цельсия" },
         { "version", "Версия обработки" },
         { "D", "дневное обнаружение" },
         { "N", "ночное обнаружение" }
@@ -562,6 +562,22 @@ class Program
                     if (field.Name == "daynight")
                     {
                         valueStr = fieldsDict[valueStr];
+                    }
+
+                    if(field.Name=="brightness" || field.Name == "bright_t31" || field.Name == "bright_ti4" || field.Name == "bright_ti5")
+                    {
+                        if (field.Value.IsInt32)
+                        {
+                            valueStr = (field.Value.AsInt32 - 273.15).ToString("0.##", CultureInfo.InvariantCulture);
+                        }
+                        else if (field.Value.IsInt64)
+                        {
+                            valueStr = (field.Value.AsInt64 - 273.15).ToString("0.##", CultureInfo.InvariantCulture);
+                        }
+                        else if (field.Value.IsDouble) 
+                        {
+                            valueStr = (field.Value.AsDouble - 273.15).ToString("0.##", CultureInfo.InvariantCulture);
+                        }
                     }
 
                     message += $"\n{nameStr}: {valueStr}";
