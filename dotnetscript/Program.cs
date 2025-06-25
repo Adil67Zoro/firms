@@ -14,7 +14,7 @@ class Program
     static readonly string MONGO_URI = "mongodb://admin:StrongPassword123@mongodb:27017/?authSource=admin";
     static readonly string DB_NAME = "fires";
     static readonly string COLLECTION_NAME = "Fires";
-    static readonly int Days = 1;
+    static readonly int Days = 2;
     static readonly TimeZoneInfo KZ_TZ = TimeZoneInfo.FindSystemTimeZoneById("Asia/Qyzylorda");
     static readonly HttpClient client = new();
 
@@ -528,6 +528,8 @@ class Program
                 message += $"\nСсылка: {visibleUrl2}";
 
                 message += $"\nИсточник: {source}";
+
+                message += "\nworks\n";
 
                 foreach (var field in typedRecord)
                 {
