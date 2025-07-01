@@ -1,0 +1,213 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\dotnet\\project\\fires\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4CC4C570-CB23-420B-B6F8-0AC4D068B931}|fires.csproj|c:\\users\\user\\desktop\\dotnet\\project\\fires\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4CC4C570-CB23-420B-B6F8-0AC4D068B931}|fires.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CC4C570-CB23-420B-B6F8-0AC4D068B931}|fires.csproj|c:\\users\\user\\desktop\\dotnet\\project\\fires\\background\\script.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CC4C570-CB23-420B-B6F8-0AC4D068B931}|fires.csproj|solutionrelative:background\\script.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CC4C570-CB23-420B-B6F8-0AC4D068B931}|fires.csproj|c:\\users\\user\\desktop\\dotnet\\project\\fires\\background\\scriptrunner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CC4C570-CB23-420B-B6F8-0AC4D068B931}|fires.csproj|solutionrelative:background\\scriptrunner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CC4C570-CB23-420B-B6F8-0AC4D068B931}|fires.csproj|c:\\users\\user\\desktop\\dotnet\\project\\fires\\controllers\\geojsoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CC4C570-CB23-420B-B6F8-0AC4D068B931}|fires.csproj|solutionrelative:controllers\\geojsoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CC4C570-CB23-420B-B6F8-0AC4D068B931}|fires.csproj|c:\\users\\user\\desktop\\dotnet\\project\\fires\\services\\datafetcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CC4C570-CB23-420B-B6F8-0AC4D068B931}|fires.csproj|solutionrelative:services\\datafetcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CC4C570-CB23-420B-B6F8-0AC4D068B931}|fires.csproj|c:\\users\\user\\desktop\\dotnet\\project\\fires\\services\\dataparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CC4C570-CB23-420B-B6F8-0AC4D068B931}|fires.csproj|solutionrelative:services\\dataparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CC4C570-CB23-420B-B6F8-0AC4D068B931}|fires.csproj|c:\\users\\user\\desktop\\dotnet\\project\\fires\\services\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CC4C570-CB23-420B-B6F8-0AC4D068B931}|fires.csproj|solutionrelative:services\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CC4C570-CB23-420B-B6F8-0AC4D068B931}|fires.csproj|c:\\users\\user\\desktop\\dotnet\\project\\fires\\services\\imageadder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CC4C570-CB23-420B-B6F8-0AC4D068B931}|fires.csproj|solutionrelative:services\\imageadder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CC4C570-CB23-420B-B6F8-0AC4D068B931}|fires.csproj|c:\\users\\user\\desktop\\dotnet\\project\\fires\\services\\mongodbinserter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CC4C570-CB23-420B-B6F8-0AC4D068B931}|fires.csproj|solutionrelative:services\\mongodbinserter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CC4C570-CB23-420B-B6F8-0AC4D068B931}|fires.csproj|c:\\users\\user\\desktop\\dotnet\\project\\fires\\services\\telegramsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CC4C570-CB23-420B-B6F8-0AC4D068B931}|fires.csproj|solutionrelative:services\\telegramsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CC4C570-CB23-420B-B6F8-0AC4D068B931}|fires.csproj|c:\\users\\user\\desktop\\dotnet\\project\\fires\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CC4C570-CB23-420B-B6F8-0AC4D068B931}|fires.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CC4C570-CB23-420B-B6F8-0AC4D068B931}|fires.csproj|c:\\users\\user\\desktop\\dotnet\\project\\fires\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4CC4C570-CB23-420B-B6F8-0AC4D068B931}|fires.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 267,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\dotnet\\project\\fires\\Dockerfile",
+              "RelativeDocumentMoniker": "Dockerfile",
+              "ToolTip": "C:\\Users\\User\\Desktop\\dotnet\\project\\fires\\Dockerfile",
+              "RelativeToolTip": "Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-07-01T09:47:00.076Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GeoJsonController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\dotnet\\project\\fires\\Controllers\\GeoJsonController.cs",
+              "RelativeDocumentMoniker": "Controllers\\GeoJsonController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\dotnet\\project\\fires\\Controllers\\GeoJsonController.cs",
+              "RelativeToolTip": "Controllers\\GeoJsonController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T09:44:02.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\dotnet\\project\\fires\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\dotnet\\project\\fires\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T09:42:41.092Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\dotnet\\project\\fires\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\User\\Desktop\\dotnet\\project\\fires\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-01T09:42:41.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TelegramSender.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\dotnet\\project\\fires\\Services\\TelegramSender.cs",
+              "RelativeDocumentMoniker": "Services\\TelegramSender.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\dotnet\\project\\fires\\Services\\TelegramSender.cs",
+              "RelativeToolTip": "Services\\TelegramSender.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAQwKsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T09:42:19.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MongodbInserter.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\dotnet\\project\\fires\\Services\\MongodbInserter.cs",
+              "RelativeDocumentMoniker": "Services\\MongodbInserter.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\dotnet\\project\\fires\\Services\\MongodbInserter.cs",
+              "RelativeToolTip": "Services\\MongodbInserter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T09:41:58.916Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ImageAdder.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\dotnet\\project\\fires\\Services\\ImageAdder.cs",
+              "RelativeDocumentMoniker": "Services\\ImageAdder.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\dotnet\\project\\fires\\Services\\ImageAdder.cs",
+              "RelativeToolTip": "Services\\ImageAdder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T09:41:35.508Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Helper.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\dotnet\\project\\fires\\Services\\Helper.cs",
+              "RelativeDocumentMoniker": "Services\\Helper.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\dotnet\\project\\fires\\Services\\Helper.cs",
+              "RelativeToolTip": "Services\\Helper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T09:40:57.138Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DataParser.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\dotnet\\project\\fires\\Services\\DataParser.cs",
+              "RelativeDocumentMoniker": "Services\\DataParser.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\dotnet\\project\\fires\\Services\\DataParser.cs",
+              "RelativeToolTip": "Services\\DataParser.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAzwB4AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T09:40:14.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DataFetcher.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\dotnet\\project\\fires\\Services\\DataFetcher.cs",
+              "RelativeDocumentMoniker": "Services\\DataFetcher.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\dotnet\\project\\fires\\Services\\DataFetcher.cs",
+              "RelativeToolTip": "Services\\DataFetcher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T09:39:51.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ScriptRunner.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\dotnet\\project\\fires\\Background\\ScriptRunner.cs",
+              "RelativeDocumentMoniker": "Background\\ScriptRunner.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\dotnet\\project\\fires\\Background\\ScriptRunner.cs",
+              "RelativeToolTip": "Background\\ScriptRunner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T09:39:31.23Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Script.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\dotnet\\project\\fires\\Background\\Script.cs",
+              "RelativeDocumentMoniker": "Background\\Script.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\dotnet\\project\\fires\\Background\\Script.cs",
+              "RelativeToolTip": "Background\\Script.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T09:38:52.509Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+version: "3.8"
+
+services:
+  mongodb:
+    image: mongo
+    container_name: mongod
+    restart: always
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=StrongPassword123
+    volumes:
+      - mongo_data:/data/db
+
+  fires:
+    build: ./fires
+    ports:
+      - "5000:5000"
+    depends_on:
+      - mongodb
+    environment:
+      - ASPNETCORE_URLS=http://+:5000
+      - ConnectionStrings__Default=mongodb://admin:StrongPassword123@mongodb:27017/?authSource=admin
+
+volumes:
+  mongo_data:
